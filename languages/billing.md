@@ -17,3 +17,11 @@ describe_effects do
   end
 end
 ```
+
+## Successful service execution
+
+```rb
+describe_results do
+  it_behaves_like 'a successfully executed service'
+end
+```
