@@ -33,9 +33,11 @@ describe_results { it_behaves_like 'a successfully executed service' }
 ## Service Object Failure
 
 ```rb
+return failure!(nil, OBJECT: 'ERROR_MESSAGE') unless OBJECT.SOMETHING?
+
 describe_results do
   it { should be_failure }
   it { expect(subject.errors).not_to be_nil }
-  it { should have_attributes(result: 'FAILURE_MESSAGE') }
+  it { expect(subject.errors[:OBJECT]).to include('ERROR_MESSAGE') }
 end
 ```
