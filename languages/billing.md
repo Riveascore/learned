@@ -25,3 +25,7 @@ describe_results do
   it_behaves_like 'a successfully executed service'
 end
 ```
+
+```rb
+describe_results { it_behaves_like 'a successfully executed service' }
+```
