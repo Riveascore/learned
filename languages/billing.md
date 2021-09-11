@@ -29,3 +29,13 @@ end
 ```rb
 describe_results { it_behaves_like 'a successfully executed service' }
 ```
+
+## Service Object Failure
+
+```rb
+describe_results do
+  it { should be_failure }
+  it { expect(subject.errors).not_to be_nil }
+  it { should have_attributes(result: 'FAILURE_MESSAGE') }
+end
+```
