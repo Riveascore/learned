@@ -41,3 +41,13 @@ describe_results do
   it { expect(subject.errors[:OBJECT]).to include('ERROR_MESSAGE') }
 end
 ```
+
+## Expecting object to have new values
+
+```rb
+describe_state_after do
+  it 'creates a ClaimCancellation containing the reincarnated_claim_id' do
+    expect(claim.claim_cancellation.reincarnated_claim_id).to eq(reincarnated_claim.id)
+  end
+end
+```
