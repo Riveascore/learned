@@ -51,3 +51,10 @@ describe_state_after do
   end
 end
 ```
+
+## Should or shouldn't change attributes
+
+```rb
+it { should(change { invoice.reload.attributes }) }
+it { should_not(change { invoice.reload.attributes }) }
+```
