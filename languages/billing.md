@@ -55,6 +55,6 @@ end
 ## Should or shouldn't change attributes
 
 ```rb
-it { should(change { invoice.reload.attributes }) }
-it { should_not(change { invoice.reload.attributes }) }
+it { should_not change(canceled_invoice.reload.attributes) }
+it { should_not change(successful_invoice.reload.attributes) }
 ```
