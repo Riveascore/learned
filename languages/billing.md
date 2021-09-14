@@ -4,6 +4,8 @@
 
 ## Test to assert service is called within service
 
+### Exact parameters
+
 ```rb
 describe_effects do
   it 'should execute SERVICE_TO_EXECUTE service' do
@@ -17,6 +19,27 @@ describe_effects do
   end
 end
 ```
+
+## Only check for a few parameters
+
+```rb
+describe_effects do
+  it 'should execute SERVICE_TO_EXECUTE' do
+    expect(
+      SERVICE_TO_EXECUTE
+    ).to receive(:execute!).with(
+      include(
+        PARAMETER_1: PARAMETER_1,
+        PARAMETER_2: PARAMETER_2,
+      )
+    )
+
+    subject.call
+  end
+end
+```
+
+---
 
 ## Successful service execution
 
