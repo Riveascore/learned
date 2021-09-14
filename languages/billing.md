@@ -81,3 +81,21 @@ end
 it { should_not(change { canceled_invoice.reload.attributes }) }
 it { should_not(change { successful_invoice.reload.attributes }) }
 ```
+
+---
+
+## Easy DateTime, for controller params
+
+services/sondermind_billing/app/controllers/sondermind/billing/bulk_operations_controller.rb
+
+```rb
+request_body do
+  attribute :since, Sondermind::Core::Types::Params::DateTime
+end
+```
+
+spec/services/sondermind_billing/requests/bulk_operations/retry_eligibility_spec.rb
+
+```rb
+languagelet(:params) { { since: 1.day.ago.iso8601 } }
+```
