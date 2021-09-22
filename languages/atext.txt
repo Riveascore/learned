@@ -4,3 +4,12 @@ class contains (css)
 [class*=""]
 
 ----------------------------------------
+
+
+
+;list
+
+list = Array.from(document.querySelectorAll('[]'))
+list.map(x => x.textContent)
+
+----------------------------------------
