@@ -3,6 +3,7 @@
 ## Languages
 
 - [Angular](languages/angular.md)
+- [Amazon / AWS](languages/amazon_aws.md)
 - [Atext](languages/atext.txt)
 - [Bash](languages/bash.md)
 - [Billing](languages/billing.md)
