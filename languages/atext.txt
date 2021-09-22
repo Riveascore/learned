@@ -9,7 +9,7 @@ class contains (css)
 
 ;list
 
-list = Array.from(document.querySelectorAll('[]'))
+list = Array.from(document.querySelectorAll(''))
 list.map(x => x.textContent)
 
 ----------------------------------------
