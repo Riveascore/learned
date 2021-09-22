@@ -9,6 +9,7 @@
 - [Billing](languages/billing.md)
 - [Ghtopdep](languages/ghtopdep.md)
 - [Git](languages/git.md)
+- [Links](languages/links.md)
 - [Mac](languages/mac.md)
 - [Rails](languages/rails.md)
 - [Regexes](languages/regexes.md)
