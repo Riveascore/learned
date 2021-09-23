@@ -1,4 +1,8 @@
-## Ruby
+## SonderMind RSpec Paths / Directories
+
+[Directory paths](paths/sm_rspec.md)
+
+## Ruby Docs
 
 <https://ruby-doc.org/core-2.6.5/#class-index>
 
