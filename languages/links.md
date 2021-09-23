@@ -1,6 +1,6 @@
 ## SonderMind RSpec Paths / Directories
 
-[Directory paths](paths/sm_rspec.md)
+[Directory paths](paths/sm_rspec.md#service-objects)
 
 ## Ruby Docs
 
