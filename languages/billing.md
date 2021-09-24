@@ -99,3 +99,12 @@ spec/services/sondermind_billing/requests/bulk_operations/retry_eligibility_spec
 ```rb
 languagelet(:params) { { since: 1.day.ago.iso8601 } }
 ```
+
+## Model raise_error one-liner
+
+```rb
+context 'when invalid_type' do
+  subject { proc { described_class.by_type('invalid_type') } }
+  it { is_expected.to raise_error(ArgumentError, /unknown type keyword/) }
+end
+```
